@@ -29,7 +29,8 @@
     </script>
 </head>
 <body>
-    <header>
+    <!-- header section for blog -->
+    <header class="sticky top-0 bg-blend-saturation backdrop-blur-md z-10">
         <nav class="bg-slate-100 pt-2 pb-6"> 
             <!-- need to work letter with blog on mobile version -->
             <section class="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-3 justify-between items-center">
@@ -47,5 +48,51 @@
             </section>
         </nav>
     </header>
+
+    <main>
+        <!-- FAQ section -->
+         <section class="max-w-screen-sm md:max-w-screen-xl mx-auto my-12 flex flex-col justify-start backdrop-blur">
+            <div class="flex justify-start items-center gap-3 mb-8">
+                <h1 class="text-left font-lexend font-bold text-3xl md:text-5xl pl-2 md:pl-0">Important FAQ</h1>
+                <img class="w-16" src="./assets/FAQ.png" alt="FAQ section">
+                <!-- on mobile version -->
+                <button class="block md:hidden font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8"><a href="index.html">Home</a></button>
+                
+            </div>
+            <div class="join join-vertical min-w-full">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                  <div class="collapse-content">
+                    <p>hello</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                  <div class="collapse-content">
+                    <p>hello</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                  <div class="collapse-content">
+                    <p>hello</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-content">
+                      <p>hello</p>
+                    </div>
+                  </div>
+              </div>
+         </section>
+    </main>
+    <footer class="mt-12 max-w-screen-xl mx-auto">
+        <span class="font-lexend font-extrabold">all the rights reseved by &copy;donate bangladesh</span>
+    </footer>
 </body>
 </html>
