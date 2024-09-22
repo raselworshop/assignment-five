@@ -2,7 +2,11 @@
 module.exports = {
   content: ['*'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'lexend': ["Lexend", 'sans-serif']
+    },
+    },
   },
   plugins: [
     require('daisyui')

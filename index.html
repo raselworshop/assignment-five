@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment five</title>
+    <!-- google lexend font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <!-- Daisy UI cdn for live link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -13,6 +17,9 @@
       tailwind.config = {
         theme: {
           extend: {
+            fontFamily: {
+                'lexend': ["Lexend", 'sans-serif']
+            },
             colors: {
               clifford: '#da373d',
             }
@@ -22,24 +29,33 @@
     </script>
 </head>
 <body>
-    <!-- to check tailwind -->
-    <h1>hellow tailwind</h1>
-    <h2>hellow tailwind</h2>
-    <h3>hellow tailwind</h3>
-    <!-- to check daisy ui -->
-     <!-- Open the modal using ID.showModal() method -->
-<button class="btn" onclick="my_modal_5.showModal()">open modal</button>
-<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box">
-    <h3 class="text-lg font-bold">Hello!</h3>
-    <p class="py-4">Press ESC key or click the button below to close</p>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
+    <header class="">
+        <nav class="bg-slate-100 pt-4 pb-10"> 
+            <!-- need to work letter with blog on mobile version -->
+            <section class="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-3 justify-between items-center">
+                <div class="hidden lg:block">
+                    <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8">Blog</button>
+                </div>
+                <div class="flex flex-col md:flex-row justify-start md:justify-center items-center gap-2">
+                    <img src="./assets/logo.png" alt="Logo">
+                    <h3 class="font-lexend text-lg md:text-2xl font-semibold">Donate Bangladesh</h3>
+                </div>
+                <div id="donate-balance" class="flex flex-col md:flex-row justify-end items-center gap-4">
+                    <img src="./assets/coin.png" alt="Coin sign">
+                    <p class="font-lexend font-semibold text-lg md:text-2xl text-slate-500">15500 BDT</p>
+                </div>
+            </section>
+        </nav>
+        <section class="max-w-screen-sm lg:max-w-screen-xl mx-auto mt-14 flex justify-center items-center">
+            <div class="grid grid-cols-3 md:block space-x-2">
+                <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 md:px-8">Donation</button>
+                <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 md:px-8">History</button>
+                <!-- on mobile version -->
+                <button class="block md:hidden font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8">Blog</button>
+            </div>
+        </section>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
