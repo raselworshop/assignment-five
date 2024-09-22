@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog section</title>
+    <!-- google lexend font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Daisy UI cdn for live link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind cdn for live link custom design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            fontFamily: {
+                'lexend': ["Lexend", 'sans-serif']
+            },
+            colors: {
+                clifford: '#da373d',
+            }
+            }
+        }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="bg-slate-100 pt-2 pb-6"> 
+            <!-- need to work letter with blog on mobile version -->
+            <section class="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-3 justify-between items-center">
+                <div class="hidden lg:block">
+                    <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8"><a href="index.html">Home</a></button>
+                </div>
+                <div class="flex flex-col md:flex-row justify-start md:justify-center items-center gap-2">
+                    <img src="./assets/logo.png" alt="Logo">
+                    <h3 class="font-lexend text-lg md:text-2xl font-semibold">Donate Bangladesh</h3>
+                </div>
+                <div id="donate-balance" class="flex flex-col md:flex-row justify-end items-center gap-4">
+                    <img src="./assets/coin.png" alt="Coin sign">
+                    <p class="font-lexend font-semibold text-lg md:text-2xl text-slate-500">15500 BDT</p>
+                </div>
+            </section>
+        </nav>
+    </header>
+</body>
+</html>
