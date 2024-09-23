@@ -43,144 +43,151 @@
                 </div>
                 <div id="donate-balance" class="flex flex-col md:flex-row justify-end items-center gap-4">
                     <img src="./assets/coin.png" alt="Coin sign">
-                    <p class="font-lexend font-semibold text-lg md:text-2xl text-slate-500">15500 BDT</p>
+                    <p class="font-lexend font-semibold text-lg md:text-2xl text-slate-500"><span id="main-balance">15500</span> BDT</p>
                 </div>
             </section>
         </nav>
         <!-- donation and history section here -->
         <section class="max-w-screen-sm lg:max-w-screen-xl mx-auto mt-8 flex justify-center items-center bg-blend-saturation backdrop-blur-sm">
             <div class="grid grid-cols-3 md:block space-x-2">
-                <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 md:px-8">Donation</button>
-                <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 md:px-8">History</button>
+                <button id="btn-donation" class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 md:px-8">Donation</button>
+                <button id="btn-history" class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 md:px-8">History</button>
                 <!-- on mobile version -->
                 <button class="block md:hidden font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8"><a href="blog.html">Blog</a></button>
             </div>
         </section>
     </header>
-    <main>
-        <!-- donate noakhali section -->
-        <section class="my-14">
-            <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-4 max-w-screen-sm md:max-w-screen-xl mx-auto border-2 p-2 md:p-6 rounded-xl">
-                <div>
-                    <img class="w-full md:w-10/12" src="./assets/noakhali.png" alt="Flood affected in noakhali">
-                </div>
-                <div class="grid grid-cols-1 justify-between gap-4">
-                    <div class="w-36 flex items-center gap-2 bg-slate-100 p-3 rounded-lg">
-                        <img src="./assets/coin.png" alt="dollar sign">
-                        <p class="font-lexend">2490 BDT</p>
-                    </div>
+    <main id="donate-sections">
+        <section id="donation-blogs">
+            <!-- donate noakhali section -->
+            <section class="my-14">
+                <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-4 max-w-screen-sm md:max-w-screen-xl mx-auto border-2 p-2 md:p-6 rounded-xl">
                     <div>
-                        <h2 class="font-lexend font-bold text-2xl mb-3">Donate for Flood at Noakhali, Bangladesh</h2>
-                        <p class="text-left text-slate-500"> The recent floods in Noakhali have caused significant damage to  
-                            homes  infrastructure. Your donation will help provide essential  
-                            supplies and  to those affected by this disaster. Every contribution,
-                            big or small, makes  difference. Please join us in supporting the relief 
-                            efforts and making a positive impact on the lives of those in need.</p>
+                        <img class="w-full md:w-10/12" src="./assets/noakhali.png" alt="Flood affected in noakhali">
                     </div>
-                    <input type="text" placeholder="Input Donation Amount" class="input input-bordered w-full" />
-                    <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8">Donate now</button>
+                    <div class="grid grid-cols-1 justify-between gap-4">
+                        <div class="w-36 flex items-center gap-2 bg-slate-100 p-3 rounded-lg">
+                            <img src="./assets/coin.png" alt="dollar sign">
+                            <p class="font-lexend"><span  id="noakhali-donate-fund">2490</span> BDT</p>
+                        </div>
+                        <div>
+                            <h2 class="font-lexend font-bold text-2xl mb-3">Donate for Flood at Noakhali, Bangladesh</h2>
+                            <p class="text-left text-slate-500"> The recent floods in Noakhali have caused significant damage to  
+                                homes  infrastructure. Your donation will help provide essential  
+                                supplies and  to those affected by this disaster. Every contribution,
+                                big or small, makes  difference. Please join us in supporting the relief 
+                                efforts and making a positive impact on the lives of those in need.</p>
+                        </div>
+                        <input type="text" id="noakhali-input-money" placeholder="Input Donation Amount" class="input input-bordered w-full" />
+                        <button id="btn-noakhali-donate" class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8">Donate now</button>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <!-- donate feni section -->
+            <section class="my-14">
+                <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-4 max-w-screen-sm md:max-w-screen-xl mx-auto border-2 p-2 md:p-6 rounded-xl">
+                    <div>
+                        <img class="w-full md:w-10/12" src="./assets/feni.png" alt="Flood affected in noakhali">
+                    </div>
+                    <div class="grid grid-cols-1 justify-between gap-4">
+                        <div class="w-36 flex items-center gap-2 bg-slate-100 p-3 rounded-lg">
+                            <img src="./assets/coin.png" alt="dollar sign">
+                            <p class="font-lexend">2999 BDT</p>
+                        </div>
+                        <div>
+                            <h2 class="font-lexend font-bold text-2xl mb-3">Donate for Flood Relief in Feni,Bangladesh</h2>
+                            <p class="text-left text-slate-500"> The recent floods in Noakhali have caused significant damage to  
+                                homes  infrastructure. Your donation will help provide essential  
+                                supplies and  to those affected by this disaster. Every contribution,
+                                big or small, makes  difference. Please join us in supporting the relief 
+                                efforts and making a positive impact on the lives of those in need.</p>
+                        </div>
+                        <input type="text" placeholder="Input Donation Amount" class="input input-bordered w-full" />
+                        <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8">Donate now</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Aid for injured people section -->
+            <section class="my-14">
+                <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-4 max-w-screen-sm md:max-w-screen-xl mx-auto border-2 p-2 md:p-6 rounded-xl">
+                    <div>
+                        <img class="w-full md:w-fit" src="./assets/quota-protest.png" alt="Flood affected in noakhali">
+                    </div>
+                    <div class="grid grid-cols-1 justify-between gap-4">
+                        <div class="w-36 flex items-center gap-2 bg-slate-100 p-3 rounded-lg">
+                            <img src="./assets/coin.png" alt="dollar sign">
+                            <p class="font-lexend">1999 BDT</p>
+                        </div>
+                        <div>
+                            <h2 class="font-lexend font-bold text-2xl mb-3">Aid for Injured in the Quota Movement</h2>
+                            <p class="text-left text-slate-500"> The recent floods in Noakhali have caused significant damage to  
+                                homes  infrastructure. Your donation will help provide essential  
+                                supplies and  to those affected by this disaster. Every contribution,
+                                big or small, makes  difference. Please join us in supporting the relief 
+                                efforts and making a positive impact on the lives of those in need.</p>
+                        </div>
+                        <input type="text" placeholder="Input Donation Amount" class="input input-bordered w-full" />
+                        <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8">Donate now</button>
+                    </div>
+                </div>
+            </section>
+            <!-- donate for child section -->
+            <section class="my-14">
+                <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-4 max-w-screen-sm md:max-w-screen-xl mx-auto border-2 p-2 md:p-6 rounded-xl">
+                    <div>
+                        <img class="w-full md:w-11/12 rounded-xl" src="./assets/donation2.jpg" alt="Flood affected in noakhali">
+                    </div>
+                    <div class="grid grid-cols-1 justify-between gap-4">
+                        <div class="w-36 flex items-center gap-2 bg-slate-100 p-3 rounded-lg">
+                            <img src="./assets/coin.png" alt="dollar sign">
+                            <p class="font-lexend">1499 BDT</p>
+                        </div>
+                        <div>
+                            <h2 class="font-lexend font-bold text-2xl mb-3">Donate for Child to growth, Education, Bangladesh</h2>
+                            <p class="text-left text-slate-500"> The recent floods in Noakhali have caused significant damage to  
+                                homes  infrastructure. Your donation will help provide essential  
+                                supplies and  to those affected by this disaster. Every contribution,
+                                big or small, makes  difference. Please join us in supporting the relief 
+                                efforts and making a positive impact on the lives of those in need.</p>
+                        </div>
+                        <input type="text" placeholder="Input Donation Amount" class="input input-bordered w-full" />
+                        <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8">Donate now</button>
+                    </div>
+                </div>
+            </section>
+            <!-- donate for old men and women section -->
+            <section class="my-14">
+                <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-4 max-w-screen-sm md:max-w-screen-xl mx-auto border-2 p-2 md:p-6 rounded-xl">
+                    <div>
+                        <img class="w-full md:w-11/12 rounded-xl" src="./assets/donation4.jpg" alt="Flood affected in noakhali">
+                    </div>
+                    <div class="grid grid-cols-1 justify-between gap-4">
+                        <div class="w-36 flex items-center gap-2 bg-slate-100 p-3 rounded-lg">
+                            <img src="./assets/coin.png" alt="dollar sign">
+                            <p class="font-lexend">999 BDT</p>
+                        </div>
+                        <div>
+                            <h2 class="font-lexend font-bold text-2xl mb-3">Donate for Old People, Bangladesh</h2>
+                            <p class="text-left text-slate-500"> The recent floods in Noakhali have caused significant damage to  
+                                homes  infrastructure. Your donation will help provide essential  
+                                supplies and  to those affected by this disaster. Every contribution,
+                                big or small, makes  difference. Please join us in supporting the relief 
+                                efforts and making a positive impact on the lives of those in need.</p>
+                        </div>
+                        <input type="text" placeholder="Input Donation Amount" class="input input-bordered w-full" />
+                        <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8">Donate now</button>
+                    </div>
+                </div>
+            </section>
         </section>
-        <!-- donate feni section -->
-        <section class="my-14">
-            <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-4 max-w-screen-sm md:max-w-screen-xl mx-auto border-2 p-2 md:p-6 rounded-xl">
-                <div>
-                    <img class="w-full md:w-10/12" src="./assets/feni.png" alt="Flood affected in noakhali">
-                </div>
-                <div class="grid grid-cols-1 justify-between gap-4">
-                    <div class="w-36 flex items-center gap-2 bg-slate-100 p-3 rounded-lg">
-                        <img src="./assets/coin.png" alt="dollar sign">
-                        <p class="font-lexend">2999 BDT</p>
-                    </div>
-                    <div>
-                        <h2 class="font-lexend font-bold text-2xl mb-3">Donate for Flood Relief in Feni,Bangladesh</h2>
-                        <p class="text-left text-slate-500"> The recent floods in Noakhali have caused significant damage to  
-                            homes  infrastructure. Your donation will help provide essential  
-                            supplies and  to those affected by this disaster. Every contribution,
-                            big or small, makes  difference. Please join us in supporting the relief 
-                            efforts and making a positive impact on the lives of those in need.</p>
-                    </div>
-                    <input type="text" placeholder="Input Donation Amount" class="input input-bordered w-full" />
-                    <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8">Donate now</button>
-                </div>
-            </div>
-        </section>
-        <!-- Aid for injured people section -->
-        <section class="my-14">
-            <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-4 max-w-screen-sm md:max-w-screen-xl mx-auto border-2 p-2 md:p-6 rounded-xl">
-                <div>
-                    <img class="w-full md:w-fit" src="./assets/quota-protest.png" alt="Flood affected in noakhali">
-                </div>
-                <div class="grid grid-cols-1 justify-between gap-4">
-                    <div class="w-36 flex items-center gap-2 bg-slate-100 p-3 rounded-lg">
-                        <img src="./assets/coin.png" alt="dollar sign">
-                        <p class="font-lexend">1999 BDT</p>
-                    </div>
-                    <div>
-                        <h2 class="font-lexend font-bold text-2xl mb-3">Aid for Injured in the Quota Movement</h2>
-                        <p class="text-left text-slate-500"> The recent floods in Noakhali have caused significant damage to  
-                            homes  infrastructure. Your donation will help provide essential  
-                            supplies and  to those affected by this disaster. Every contribution,
-                            big or small, makes  difference. Please join us in supporting the relief 
-                            efforts and making a positive impact on the lives of those in need.</p>
-                    </div>
-                    <input type="text" placeholder="Input Donation Amount" class="input input-bordered w-full" />
-                    <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8">Donate now</button>
-                </div>
-            </div>
-        </section>
-        <!-- donate for child section -->
-        <section class="my-14">
-            <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-4 max-w-screen-sm md:max-w-screen-xl mx-auto border-2 p-2 md:p-6 rounded-xl">
-                <div>
-                    <img class="w-full md:w-11/12 rounded-xl" src="./assets/donation2.jpg" alt="Flood affected in noakhali">
-                </div>
-                <div class="grid grid-cols-1 justify-between gap-4">
-                    <div class="w-36 flex items-center gap-2 bg-slate-100 p-3 rounded-lg">
-                        <img src="./assets/coin.png" alt="dollar sign">
-                        <p class="font-lexend">1499 BDT</p>
-                    </div>
-                    <div>
-                        <h2 class="font-lexend font-bold text-2xl mb-3">Donate for Child to growth, Education, Bangladesh</h2>
-                        <p class="text-left text-slate-500"> The recent floods in Noakhali have caused significant damage to  
-                            homes  infrastructure. Your donation will help provide essential  
-                            supplies and  to those affected by this disaster. Every contribution,
-                            big or small, makes  difference. Please join us in supporting the relief 
-                            efforts and making a positive impact on the lives of those in need.</p>
-                    </div>
-                    <input type="text" placeholder="Input Donation Amount" class="input input-bordered w-full" />
-                    <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8">Donate now</button>
-                </div>
-            </div>
-        </section>
-        <!-- donate for old men and women section -->
-        <section class="my-14">
-            <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-4 max-w-screen-sm md:max-w-screen-xl mx-auto border-2 p-2 md:p-6 rounded-xl">
-                <div>
-                    <img class="w-full md:w-11/12 rounded-xl" src="./assets/donation4.jpg" alt="Flood affected in noakhali">
-                </div>
-                <div class="grid grid-cols-1 justify-between gap-4">
-                    <div class="w-36 flex items-center gap-2 bg-slate-100 p-3 rounded-lg">
-                        <img src="./assets/coin.png" alt="dollar sign">
-                        <p class="font-lexend">999 BDT</p>
-                    </div>
-                    <div>
-                        <h2 class="font-lexend font-bold text-2xl mb-3">Donate for Old People, Bangladesh</h2>
-                        <p class="text-left text-slate-500"> The recent floods in Noakhali have caused significant damage to  
-                            homes  infrastructure. Your donation will help provide essential  
-                            supplies and  to those affected by this disaster. Every contribution,
-                            big or small, makes  difference. Please join us in supporting the relief 
-                            efforts and making a positive impact on the lives of those in need.</p>
-                    </div>
-                    <input type="text" placeholder="Input Donation Amount" class="input input-bordered w-full" />
-                    <button class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8">Donate now</button>
-                </div>
-            </div>
+        <section id="history-section">
+
         </section>
     </main>
     <footer class="mt-12 max-w-screen-xl mx-auto">
         <span class="font-lexend font-extrabold">all the rights reseved by &copy;donate bangladesh</span>
     </footer>
+    <script src="./js-files/main.js"></script>
+    <script src="./js-files/utilities.js"></script>
 </body>
 </html>
