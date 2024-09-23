@@ -1,10 +1,12 @@
+// added function for donation button and history button 
+
 // noakhali Fund section  
 document.getElementById('btn-noakhali-donate')
     .addEventListener('click', function(event){
         event.preventDefault();
 
         const addMoneyNoakhali = getInputFieldValueById('noakhali-input-money');
-        if( !isNaN(addMoneyNoakhali) && addMoneyNoakhali !== '' && addMoneyNoakhali !== null){
+        if(!isNaN(addMoneyNoakhali) && addMoneyNoakhali !== '' && addMoneyNoakhali !== null){
             const noakhaliFund = getTextFieldValueById('noakhali-donate-fund');
             const totalFund = addMoneyNoakhali + noakhaliFund;
             const mainBalance = getTextFieldValueByIdfromMainBalance('main-balance');
