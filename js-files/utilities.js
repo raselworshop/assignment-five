@@ -22,5 +22,11 @@ function showSectionById(id){
     document.getElementById('donation-blogs').classList.add('hidden');
     document.getElementById('history-section').classList.add('hidden');
 
-    document.getElementById(id).classList.remove('hidden')
+    document.getElementById(id).classList.remove('hidden');
+}
+function setColorOnButton(id){
+    document.getElementById('btn-donation').classList.remove('bg-lime-400');
+    document.getElementById('btn-history').classList.remove('bg-lime-400');
+
+    document.getElementById(id).classList.add('bg-lime-400')
 }
