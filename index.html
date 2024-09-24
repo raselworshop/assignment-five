@@ -79,7 +79,23 @@
                                 efforts and making a positive impact on the lives of those in need.</p>
                         </div>
                         <input type="text" id="noakhali-input-money" placeholder="Input Donation Amount" class="input input-bordered w-full" />
-                        <button id="btn-noakhali-donate" class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8">Donate now</button>
+                        <button id="btn-noakhali-donate" onclick="my_modal_5.showModal()" class="font-lexend font-semibold text-xl md:text-2xl rounded-xl btn bg-lime-400 hover:bg-lime-400 px-8">Donate now</button>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <dialog id="my_modal_5" class="modal">
+                           <form method="dialog" 
+                            class="modal-box px-5 py-8 flex flex-col justify-center items-center gap-4">
+                        
+                            <h1 class="text-2xl md:mdtext-5xl font-lexend font-extrabold">Congratulations!!!</h1>
+                            <img class="w-1/12" src="./assets/coin.png" alt="coins">
+                            <p>Your donations has accepted!!!</p>
+                            <p class="font-bold font-lexend text-lg">Successfully</p>
+                            <div class="modal-action">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn">Close Confirmation</button>
+                            </div>
+                         </form>
+                        
+                        </dialog>
                     </div>
                 </div>
             </section>
@@ -180,8 +196,10 @@
                 </div>
             </section>
         </section>
-        <section id="history-section">
+        <section id="history-section" class="hidden">
+            <div id="transaction-container">
 
+            </div>
         </section>
     </main>
     <footer class="mt-12 max-w-screen-xl mx-auto">
@@ -190,5 +208,6 @@
     <script src="./js-files/main.js"></script>
     <script src="./js-files/utilities.js"></script>
     <script src="./js-files/features.js"></script>
+    <script src="js-files/time.js"></script>
 </body>
 </html>

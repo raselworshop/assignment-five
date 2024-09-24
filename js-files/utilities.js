@@ -16,6 +16,10 @@ function getTextFieldValueByIdfromMainBalance(id){
     const textValueMainBalanceNumber = parseFloat(textValueMainBalance);
     return textValueMainBalanceNumber;
 }
+// modal function 
+
+// transaction history section details 
+
 
 // history and donation button function 
 function showSectionById(id){
