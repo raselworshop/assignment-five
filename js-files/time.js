@@ -1,3 +1,4 @@
+// dear sir I took full help for this and I don't know what is happing with me sometime I forget how to call function, or how join with document with function if you don't' mind please give me some advice 
 function updateTime(){
     const now = new Date();
 
@@ -15,5 +16,6 @@ function updateTime(){
     };
 }
 setInterval(updateTime, 1000);
+
 
 
