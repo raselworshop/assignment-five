@@ -86,7 +86,7 @@ document.getElementById('btn-protest-donate')
         const deductedBalance= mainBalance-addMoneyProtest;
         // total balnces
         document.getElementById('main-balance').innerText = deductedBalance;
-        document.getElementById('feni-donate-fund').innerText = totalFund;
+        document.getElementById('protest-donate-fund').innerText = totalFund;
 
         // added function for donation button and history button 
         const dateTime = updateTime();
