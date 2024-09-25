@@ -27,7 +27,8 @@ document.getElementById('btn-noakhali-donate')
                 <div>Date: ${dateTime.date}</div>
             </div>
         `
-        document.getElementById('transaction-container').appendChild(div)
+        document.getElementById('transaction-container').appendChild(div);
+        my_modal_5.showModal();
         
     }else{
         alert('Failed to donate, please try again!!');
@@ -63,7 +64,8 @@ document.getElementById('btn-feni-donate')
                 <div>Date: ${dateTime.date}</div>
             </div>
         `
-        document.getElementById('transaction-container').appendChild(div)
+        document.getElementById('transaction-container').appendChild(div);
+        my_modal_4.showModal()
         
     }else{
         alert('Failed to donate, please try again!!');
@@ -99,7 +101,8 @@ document.getElementById('btn-protest-donate')
                 <div>Date: ${dateTime.date}</div>
             </div>
         `
-        document.getElementById('transaction-container').appendChild(div)
+        document.getElementById('transaction-container').appendChild(div);
+        my_modal_3.showModal();
         
     }else{
         alert('Failed to donate, please try again!!');
@@ -135,7 +138,8 @@ document.getElementById('btn-child-donate')
                 <div>Date: ${dateTime.date}</div>
             </div>
         `
-        document.getElementById('transaction-container').appendChild(div)
+        document.getElementById('transaction-container').appendChild(div);
+        my_modal_2.showModal()
         
     }else{
         alert('Failed to donate, please try again!!');

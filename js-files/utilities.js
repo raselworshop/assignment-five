@@ -1,12 +1,18 @@
 
 function getInputFieldValueById(id){
     const inputValues = document.getElementById(id).value;
+    if(isNaN(inputValues)){
+        return NaN;
+    }
     const inputValuesNumber = parseFloat(inputValues)
     return inputValuesNumber;
 }
 
 function getTextFieldValueById(id){
     const textValue = document.getElementById(id).innerText;
+    if(isNaN(textValue)){
+        return NaN;
+    }
     const textValueNumber = parseFloat(textValue);
     return textValueNumber;
 }
